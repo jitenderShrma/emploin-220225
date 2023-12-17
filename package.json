@@ -1,0 +1,25 @@
+{
+  "name": "emploin",
+  "version": "1.0.0",
+  "description": "employee listing app",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "MIT"
+  ],
+  "author": "jitender",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "colors": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.2"
+  }
+}
