@@ -2,38 +2,36 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const EmployeeSchema = new Schema({
-    firstName:{
-        type:String,
-        required:true
+    companyName: String,
+    companyMotto: String,
+    companyEst: String,
+    firstName: {
+        type: String,
+        required: true
     },
-    lastName:{
-        type:String,
+    lastName: String,
+    avatar:String,
+    jobTitle: {
+        type: String,
+        required: true
     },
-    jobTitle:{
-        type:String,
-        required:true
+    contactNo: {
+        type: String,
+        required: true
     },
-    contactNo:{
-        type:String,
-        required:true
+    address: {
+        type: String,
+        required: true
     },
-    address:{
-        type:String,
-        required:true
+    age: Number,
+    bio: String,
+    joinedDate: {
+        type: Date,
+        required: true
     },
-    age:{
-        type:Number
-    },
-    bio:{
-        type:String
-    },
-    joinedDate:{
-        type:String,
-        required:true
-    },
-    createdAt:{
-        type:String,
-        default:new Date()
+    createdAt: {
+        type: String,
+        default: new Date()
     }
 });
 
