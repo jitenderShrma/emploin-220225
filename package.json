@@ -4,7 +4,11 @@
   "description": "employee listing app",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "start:both": "concurrently \"npm run start:server\" \"npm run start:client\"",
+    "start:server": "node server.js",
+    "start:client": "cd client && npm start",
+    "install:both": "npm install && cd client && npm install"
   },
   "keywords": [
     "MIT"
